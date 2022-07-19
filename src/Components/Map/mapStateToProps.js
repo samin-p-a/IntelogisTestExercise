@@ -5,6 +5,11 @@ const mapStateToProps = (state) =>{
     },
     api:{
       route,
+      points,
+      deliveryRequests=[],
+    },
+    map:{
+      selectedDeliveryRequest,
     },
     service:{
       Api:{
@@ -12,9 +17,15 @@ const mapStateToProps = (state) =>{
       },
     },
   } = state;
+  //выбираем только нужные нам данные
+  const start = deliveryRequests?.[selectedDeliveryRequest]?.from;
+  const end = deliveryRequests?.[selectedDeliveryRequest]?.to;
   return {
     paletteWidth,
     route,
+    points,
+    start,
+    end,
     getRoute,
   }
 }
