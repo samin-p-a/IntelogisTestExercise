@@ -8,8 +8,8 @@ const updateMap = (state, action) => {
   const { map:data } = state
 
   switch(action.type){
-    // case 'SET_MAP_что-то-там-такое':
-    //   return {...data, status:action.payload};
+    case 'SET_MAP_SELECTED_DELIVERY_REQUEST':
+      return {...data, selectedDeliveryRequest:action.payload};
 
     default:
       return data;
