@@ -1,8 +1,8 @@
 import { ThemeProvider } from '@mui/material/styles';
 
 import Panel from '../../UIComponents/Panel'
+import DataPalete from '../DataPalete'
 import Map from '../Map'
-import Palette from '../../UIComponents/ResizebleDrawer'
 
 import theme from './theme';
 import './App.css';
@@ -12,7 +12,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Panel/>
       <Map/>
-      <Palette/>
+      <DataPalete/>
     </ThemeProvider>
   );
 }
