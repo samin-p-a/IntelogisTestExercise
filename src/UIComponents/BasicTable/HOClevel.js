@@ -1,4 +1,4 @@
 import BasicTable from './BasicTable';
 import { withErrorBoundary } from '../../SystemComponent/ErrorBoundary';
 
-export default withErrorBoundary('Panel')(BasicTable);
+export default withErrorBoundary('BasicTable')(BasicTable);
